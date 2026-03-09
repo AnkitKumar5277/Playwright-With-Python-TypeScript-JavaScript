@@ -1,3 +1,5 @@
+# Project Structure
+
 ```
 playwright_pytest_project
 │
@@ -16,5 +18,13 @@ playwright_pytest_project
 ├── pytest.ini
 └── requirements.txt
 ```
+
+We’ll make a clean Playwright + Pytest framework structure using:
+- tests/  → where test scripts go
+- pages/  → for Page Object Model (optional but useful)
+- conftest.py  → for setting up browser fixtures
+- pytest.ini  → for config
+- utils/  → for helpers (if needed)
+- Reports/screenshots/logs (auto-generated)
 
 <img width="1414" height="669" alt="image" src="https://github.com/user-attachments/assets/d50ac047-3791-4732-99df-5f457f687f8b" />
