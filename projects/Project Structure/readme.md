@@ -1,5 +1,5 @@
 ```
-**_playwright_pytest_project
+playwright_pytest_project
 │
 ├── tests
 │   └── test_example.py
@@ -14,7 +14,7 @@
 │
 ├── conftest.py
 ├── pytest.ini
-└── requirements.txt_**
+└── requirements.txt
 ```
 
 <img width="1414" height="669" alt="image" src="https://github.com/user-attachments/assets/d50ac047-3791-4732-99df-5f457f687f8b" />
