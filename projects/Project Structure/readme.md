@@ -1,3 +1,22 @@
+### Install
+```
+pip install -r requirements.txt
+playwright install
+```
+
+### ▶️ Normal Run
+```pytest```
+### ⚡ Parallel Execution
+```pytest -n 3```
+### 📊 Allure Report 
+```allure serve reports/allure-results```
+
+### Playwright + PyTest framework with:
+✅ Page Object Model  
+✅ Data-driven testing (CSV)  
+✅ Allure reporting  
+✅ Parallel execution (xdist)  
+
 # Project Structure
 
 ```
