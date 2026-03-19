@@ -5,11 +5,17 @@ playwright install
 ```
 
 ### ▶️ Normal Run
-```pytest```
+```
+pytest
+```
 ### ⚡ Parallel Execution
-```pytest -n 3```
+```
+pytest -n 3
+```
 ### 📊 Allure Report 
-```allure serve reports/allure-results```
+```
+allure serve reports/allure-results
+```
 
 ### Playwright + PyTest framework with:
 ✅ Page Object Model  
