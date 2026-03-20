@@ -55,7 +55,8 @@ We’ll make a clean Playwright + Pytest framework structure using:
 
 <img width="1414" height="669" alt="image" src="https://github.com/user-attachments/assets/d50ac047-3791-4732-99df-5f457f687f8b" />
 
-### Integrate With Jenkins  
+## Integrate With Jenkins  
+#### FreeStyle Job
 **1️⃣ Create Jenkins Job**  
 **2️⃣ Connect GitHub Repo**  
   Source Code Management:    
@@ -85,3 +86,47 @@ pytest -n 2 --alluredir=reports/allure-results
 **5️⃣ Run Job**  
   Click Build Now    
   
+#### Pipeline
+```
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'YOUR_REPO_URL'
+            }
+        }
+
+        stage('Setup') {
+            steps {
+                bat '''
+                python -m venv venv
+                venv\\Scripts\\activate
+                pip install -r requirements.txt
+                playwright install
+                '''
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat '''
+                venv\\Scripts\\activate
+                pytest -n 2 --alluredir=reports/allure-results
+                '''
+            }
+        }
+    }
+
+    post {
+        always {
+            allure([
+                includeProperties: false,
+                jdk: '',
+                results: [[path: 'reports/allure-results']]
+            ])
+        }
+    }
+}
+```
