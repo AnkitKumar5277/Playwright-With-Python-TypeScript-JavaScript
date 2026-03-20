@@ -56,12 +56,12 @@ We’ll make a clean Playwright + Pytest framework structure using:
 <img width="1414" height="669" alt="image" src="https://github.com/user-attachments/assets/d50ac047-3791-4732-99df-5f457f687f8b" />
 
 ### Integrate With Jenkins  
-**1️⃣ Create Jenkins Job**
-**2️⃣ Connect GitHub Repo**
-  Source Code Management:  
-  Select Git  
+**1️⃣ Create Jenkins Job**  
+**2️⃣ Connect GitHub Repo**  
+  Source Code Management:    
+  Select Git   
   Add your repo URL  
-**3️⃣ Build Steps** 
+**3️⃣ Build Steps**   
   Add Execute Windows batch command  
   ```
   # Create virtual environment
@@ -79,9 +79,9 @@ playwright install
 # Run tests in parallel
 pytest -n 2 --alluredir=reports/allure-results
 ```
-**4️⃣ Post-build action:**
-  Select Allure Report  
-  Path: ```reports/allure-results```
-**5️⃣ Run Job**
-  Click Build Now  
+**4️⃣ Post-build action:**  
+  Select Allure Report   
+  Path: ```reports/allure-results```  
+**5️⃣ Run Job**  
+  Click Build Now    
   
