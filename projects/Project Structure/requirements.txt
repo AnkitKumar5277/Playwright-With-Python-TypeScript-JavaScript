@@ -1,5 +1,0 @@
-playwright
-pytest
-pytest-xdist
-allure-pytest
-pandas
