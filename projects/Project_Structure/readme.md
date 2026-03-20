@@ -1,29 +1,3 @@
-### Install
-```
-pip install -r requirements.txt
-playwright install
-```
-
-### ▶️ Normal Run
-```
-pytest
-```
-### ⚡ Parallel Execution
-```
-pytest -n 3
-```
-### 📊 Allure Report 
-```
-allure serve reports/allure-results
-```
-
-### Playwright + PyTest framework with:
-✅ Page Object Model  
-✅ Data-driven testing (CSV)  
-✅ Allure reporting  
-✅ Parallel execution (xdist)  
-✅ Integrate with Jenkins
-
 # Project Structure
 
 ```
@@ -52,6 +26,13 @@ We’ll make a clean Playwright + Pytest framework structure using:
 - pytest.ini  → for config
 - utils/  → for helpers (if needed)
 - Reports/screenshots/logs (auto-generated)
+
+### Playwright + PyTest framework with:
+✅ Page Object Model  
+✅ Data-driven testing (CSV)  
+✅ Allure reporting  
+✅ Parallel execution (xdist)  
+✅ Integrate with Jenkins
 
 ## Integrate With Jenkins  
 #### FreeStyle Job
@@ -127,4 +108,24 @@ pipeline {
         }
     }
 }
+
+```
+
+### Install
+```
+pip install -r requirements.txt
+playwright install
+```
+
+### ▶️ Normal Run
+```
+pytest
+```
+### ⚡ Parallel Execution
+```
+pytest -n 3
+```
+### 📊 Allure Report 
+```
+allure serve reports/allure-results
 ```
