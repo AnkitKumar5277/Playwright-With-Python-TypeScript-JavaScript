@@ -19,17 +19,3 @@ A working Playwright Test that runs locally, produces an HTML report, and a scre
 6. Run with interactive UI
 7. Run in debug mode
 8. Run with trace on
-
-### Setup
-1. Create project folder and initialize npm
-npm init -y
-(npm init -y creates package.json)
-2. Install Playwright Test (dev dependency) and install browsers:
-npm init playwright@latest
-npx playwright install
-(npx playwright install downloads Chromium/Firefox/WebKit used by Playwright)
-3. Create:
-tests/todo.spec.ts (TypeScript)  or  tests/todo.spec.js (JavaScript)
-
-- Can also record : npx playwright codegen https://todomvc.com/examples/react/dist/
-- Add assertions for visibility and text
