@@ -29,6 +29,7 @@ npm init playwright@latest
 npx playwright install
 (npx playwright install downloads Chromium/Firefox/WebKit used by Playwright)
 3. Create:
-tests/todo.spec.ts (TypeScript)
-or
-tests/todo.spec.js (JavaScript)
+tests/todo.spec.ts (TypeScript)  or  tests/todo.spec.js (JavaScript)
+
+- Can also record : npx playwright codegen https://todomvc.com/examples/react/dist/
+- Add assertions for visibility and text
