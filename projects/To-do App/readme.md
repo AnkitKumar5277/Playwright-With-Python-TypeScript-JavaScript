@@ -1,4 +1,4 @@
-# Mini Project — To-do App Automation
+# To-do App Automation
 Demo App : https://todomvc.com/examples/react/dist/  
 Automate core Todo actions (add, complete, delete) on the TodoMVC app  
 
